@@ -96,13 +96,20 @@
     // Console.WriteLine(r);
 
 // Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
-    Console.Write("Введите число от 10 до 99: ");
-    int n = Convert.ToInt32(Console.ReadLine());
-    var r = n % 10;
-    n /= 10;
-    if (r > n)
-        {
-            Console.WriteLine(r);
-        }
-    else Console.WriteLine(n);
+    // Console.Write("Введите число от 10 до 99: ");
+    // int n = Convert.ToInt32(Console.ReadLine());
+    // var r = n % 10;
+    // n /= 10;
+    // if (r > n)
+    //     {
+    //         Console.WriteLine(r);
+    //     }
+    // else Console.WriteLine(n);
 
+// Удалить вторую цифру трёхзначного числа     
+    Console.Write("Введите трехзначное число: ");
+    int number = Convert.ToInt32(Console.ReadLine());;
+    int delete = 2;
+    var str = number.ToString();
+    number = int.Parse(str.Remove(str.Length - delete, 1));
+    Console.WriteLine(number);
