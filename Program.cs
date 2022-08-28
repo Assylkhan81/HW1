@@ -82,8 +82,15 @@
     //     }
 
 // Показать четные числа от 1 до N (через  "while" не получилось, надо потренироваться)
-    Console.Write("Введите N: ");
-    int N = Convert.ToInt32(Console.ReadLine());
-    for (int i = 1; i <= N; i++)
-    if (i % 2 == 0)
-    Console.WriteLine(i);
+    // Console.Write("Введите N: ");
+    // int N = Convert.ToInt32(Console.ReadLine());
+    // for (int i = 1; i <= N; i++)
+    // if (i % 2 == 0)
+    // Console.WriteLine(i);
+
+// Показать вторую цифру трёхзначного числа
+    Console.Write("Введите n: ");
+    int n = Convert.ToInt32(Console.ReadLine());
+    n /= 10;
+    var r = n % 10;
+    Console.WriteLine(r);
