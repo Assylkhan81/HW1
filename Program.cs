@@ -89,8 +89,20 @@
     // Console.WriteLine(i);
 
 // Показать вторую цифру трёхзначного числа
-    Console.Write("Введите n: ");
+    // Console.Write("Введите n: ");
+    // int n = Convert.ToInt32(Console.ReadLine());
+    // n /= 10;
+    // var r = n % 10;
+    // Console.WriteLine(r);
+
+// Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+    Console.Write("Введите число от 10 до 99: ");
     int n = Convert.ToInt32(Console.ReadLine());
-    n /= 10;
     var r = n % 10;
-    Console.WriteLine(r);
+    n /= 10;
+    if (r > n)
+        {
+            Console.WriteLine(r);
+        }
+    else Console.WriteLine(n);
+
