@@ -45,26 +45,38 @@
     //     }
 
 // Найти максимальное из трех чисел
-    int max;
-    Console.Write("Введите 1-ое число: ");
-    int numb1 = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите 2-ое число: ");
-    int numb2 = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите 3-ье число: ");
-    int numb3 = Convert.ToInt32(Console.ReadLine());
-    if (numb1 > numb2 && numb1 > numb3)
+    // int max;
+    // Console.Write("Введите 1-ое число: ");
+    // int numb1 = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Введите 2-ое число: ");
+    // int numb2 = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Введите 3-ье число: ");
+    // int numb3 = Convert.ToInt32(Console.ReadLine());
+    // if (numb1 > numb2 && numb1 > numb3)
+    //     {
+    //         //Console.WriteLine("max = " + numb1);
+    //         max = numb1;
+    //     }
+    // else if (numb2 > numb1 && numb2 > numb3)
+    //     {
+    //         //Console.WriteLine("max = " + numb2);
+    //         max = numb2;
+    //     }
+    // else
+    //     {
+    //         //Console.WriteLine("max = " + numb3);
+    //         max = numb3;
+    //     }
+    //         Console.WriteLine(max);
+            
+// Выяснить является ли число чётным
+    Console.Write("Введите число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    if (number % 2 == 1)
         {
-            //Console.WriteLine("max = " + numb1);
-            max = numb1;
-        }
-    else if (numb2 > numb1 && numb2 > numb3)
-        {
-            //Console.WriteLine("max = " + numb2);
-            max = numb2;
+            Console.WriteLine("Нечетное");
         }
     else
         {
-            //Console.WriteLine("max = " + numb3);
-            max = numb3;
+            Console.WriteLine("Четное");
         }
-            Console.WriteLine(max);
