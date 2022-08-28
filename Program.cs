@@ -107,9 +107,22 @@
     // else Console.WriteLine(n);
 
 // Удалить вторую цифру трёхзначного числа (Здесь мне помог интернет, не все понял)    
-    Console.Write("Введите трехзначное число: ");
-    int number = Convert.ToInt32(Console.ReadLine());;
-    int delete = 2;
-    var str = number.ToString();
-    number = int.Parse(str.Remove(str.Length - delete, 1));
-    Console.WriteLine(number);
+    // Console.Write("Введите трехзначное число: ");
+    // int number = Convert.ToInt32(Console.ReadLine());;
+    // int delete = 2;
+    // var str = number.ToString();
+    // number = int.Parse(str.Remove(str.Length - delete, 1));
+    // Console.WriteLine(number);
+
+// Выяснить, кратно ли число заданному, если нет, вывести остаток.
+    int ostatok;
+    Console.Write("Введите заданное число: ");
+    int n = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите кратное число: ");
+    int r = Convert.ToInt32(Console.ReadLine());
+    ostatok = n % r;
+    if (ostatok == 0)
+        {
+            Console.WriteLine("Является");
+        }
+    else Console.WriteLine("Остаток = " + ostatok);
