@@ -70,13 +70,20 @@
     //         Console.WriteLine(max);
             
 // Выяснить является ли число чётным
-    Console.Write("Введите число: ");
-    int number = Convert.ToInt32(Console.ReadLine());
-    if (number % 2 == 1)
-        {
-            Console.WriteLine("Нечетное");
-        }
-    else
-        {
-            Console.WriteLine("Четное");
-        }
+    // Console.Write("Введите число: ");
+    // int number = Convert.ToInt32(Console.ReadLine());
+    // if (number % 2 == 1)
+    //     {
+    //         Console.WriteLine("Нечетное");
+    //     }
+    // else
+    //     {
+    //         Console.WriteLine("Четное");
+    //     }
+
+// Показать четные числа от 1 до N (через  "while" не получилось, надо потренироваться)
+    Console.Write("Введите N: ");
+    int N = Convert.ToInt32(Console.ReadLine());
+    for (int i = 1; i <= N; i++)
+    if (i % 2 == 0)
+    Console.WriteLine(i);
