@@ -106,7 +106,7 @@
     //     }
     // else Console.WriteLine(n);
 
-// Удалить вторую цифру трёхзначного числа     
+// Удалить вторую цифру трёхзначного числа (Здесь мне помог интернет, не все понял)    
     Console.Write("Введите трехзначное число: ");
     int number = Convert.ToInt32(Console.ReadLine());;
     int delete = 2;
