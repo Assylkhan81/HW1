@@ -127,6 +127,12 @@
     //     }
     // else Console.WriteLine("Остаток = " + ostatok);
 
-// Найти третью цифру числа или сообщить, что её нет
+// Найти третью цифру числа или сообщить, что её нет (НЕ ЗАКОНЧИЛ!)
     Console.Write("Введите число: ");
     int number = Convert.ToInt32(Console.ReadLine());
+    if (number < 100)
+        {
+            Console.WriteLine("Нет третьего чилса");
+        }
+     // новый коммент
+     
